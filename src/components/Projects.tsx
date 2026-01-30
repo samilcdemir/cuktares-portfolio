@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import type { GitHubRepo } from '../types/github';
 
 interface ProjectsProps {
@@ -28,19 +29,22 @@ function langClass(lang: string | null): string {
 }
 
 export function Projects({ repos, loading, error }: ProjectsProps) {
+  const { t } = useTranslation();
+
   return (
     <section id="projects" className="py-24 px-4 relative">
       <div className="max-w-6xl mx-auto">
         <h2 className="font-display text-3xl sm:text-4xl font-bold text-white mb-2">
-          Projeler
+          {t('projects.title')}
         </h2>
         <p className="text-gray-400 font-body text-lg mb-12">
-          GitHub&apos;daki public repolarım. Güncelleme tarihine göre sıralı.
+          {t('projects.description')}
         </p>
 
         {error && (
           <div className="rounded-lg bg-red-500/10 border border-red-500/30 text-red-400 px-4 py-3">
-            {error}
+            <div className="font-bold">{t('projects.error_heading')}</div>
+            {error || t('projects.error')}
           </div>
         )}
 
@@ -92,7 +96,7 @@ export function Projects({ repos, loading, error }: ProjectsProps) {
                       onClick={(e) => e.stopPropagation()}
                       className="text-accent font-body text-sm font-medium hover:underline"
                     >
-                      Live
+                      {t('projects.live_btn')}
                     </a>
                   </div>
                 )}

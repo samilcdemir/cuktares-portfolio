@@ -1,0 +1,60 @@
+{
+    "nav": {
+        "projects": "Projects",
+        "skills": "Skills",
+        "experience": "Experience",
+        "about": "About",
+        "contact": "Contact"
+    },
+    "hero": {
+        "role": "Game Developer",
+        "description": "Game development tools, mobile & web projects. Check out my projects below.",
+        "cta_projects": "View Projects",
+        "cta_contact": "Contact Me"
+    },
+    "projects": {
+        "title": "Projects",
+        "description": "My public repositories on GitHub. Sorted by last update.",
+        "repo_btn": "Repo",
+        "live_btn": "Live",
+        "loading": "Loading projects...",
+        "error_heading": "Error loading projects",
+        "error": "Please try again later."
+    },
+    "skills": {
+        "title": "Skills & Technologies",
+        "description": "Languages and domains I use in my projects.",
+        "github_langs": "GitHub Languages",
+        "game_dev": "Game & Development"
+    },
+    "experience": {
+        "title": "Experience",
+        "roles": {
+            "founder": "Founder",
+            "instructor": "Instructor",
+            "president": "President",
+            "vr_specialist": "VR Specialist",
+            "board_member": "Board Member",
+            "tech_lead": "Technical Team Lead",
+            "exec_board_member": "Executive Board Member",
+            "game_dev": "Game Developer",
+            "volunteer": "Volunteer",
+            "event_coord": "Event Coordinator",
+            "sales": "Sales Specialist"
+        },
+        "present": "Present"
+    },
+    "about": {
+        "title": "About",
+        "quote": "\"Don't wear anything on your head other than a hat.\"",
+        "p1": "I'm an active game developer working with Unity(6 years+), Godot(2y+) and Unreal Engine(1y), creating immersive and engaging gameplay experiences. As the president of a large game development community, I enjoy bringing people together, leading projects, and empowering others to grow. I believe strong leadership starts with empathy, clear communication, and a shared vision.",
+        "p2": "In addition to game development, I work on VR projects focused on healthcare and simulation bridging technology and well-being through innovative design."
+    },
+    "contact": {
+        "title": "Contact",
+        "description": "You can reach out to me via GitHub or LinkedIn for collaborations."
+    },
+    "footer": {
+        "rights": "All rights reserved."
+    }
+}

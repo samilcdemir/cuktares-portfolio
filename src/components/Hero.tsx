@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import type { GitHubUser } from '../types/github';
 import { siteConfig } from '../config';
 
@@ -7,6 +8,8 @@ interface HeroProps {
 }
 
 export function Hero({ user, loading }: HeroProps) {
+  const { t } = useTranslation();
+
   return (
     <section
       id="hero"
@@ -28,23 +31,23 @@ export function Hero({ user, loading }: HeroProps) {
           {siteConfig.fullName}
         </h1>
         <p className="font-display text-accent text-xl sm:text-2xl mt-2 tracking-widest uppercase">
-          {siteConfig.role}
+          {t('hero.role')}
         </p>
         <p className="text-gray-400 mt-6 text-lg font-body max-w-xl mx-auto">
-          Oyun geliştirme araçları, mobil & web projeleri. Projelerim aşağıda.
+          {t('hero.description')}
         </p>
         <div className="mt-10 flex flex-wrap justify-center gap-4">
           <a
             href="#projects"
             className="px-6 py-3 bg-accent text-white font-display font-bold text-sm uppercase tracking-wider rounded hover:bg-accentDim transition-colors shadow-[0_0_20px_rgba(225,29,72,0.3)]"
           >
-            Projelere Git
+            {t('hero.cta_projects')}
           </a>
           <a
             href="#contact"
             className="px-6 py-3 border border-accent/50 text-accent font-display font-bold text-sm uppercase tracking-wider rounded hover:bg-accent/20 transition-colors"
           >
-            İletişim
+            {t('hero.cta_contact')}
           </a>
         </div>
       </div>

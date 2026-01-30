@@ -1,0 +1,60 @@
+{
+    "nav": {
+        "projects": "Projeler",
+        "skills": "Yetenekler",
+        "experience": "Deneyim",
+        "about": "Hakkında",
+        "contact": "İletişim"
+    },
+    "hero": {
+        "role": "Oyun Geliştirici",
+        "description": "Oyun geliştirme araçları, mobil & web projeleri. Projelerim aşağıda.",
+        "cta_projects": "Projelere Git",
+        "cta_contact": "İletişim"
+    },
+    "projects": {
+        "title": "Projeler",
+        "description": "GitHub'daki public repolarım. Güncelleme tarihine göre sıralı.",
+        "repo_btn": "Repo",
+        "live_btn": "Canlı",
+        "loading": "Projeler yükleniyor...",
+        "error_heading": "Hata",
+        "error": "Lütfen daha sonra tekrar deneyin."
+    },
+    "skills": {
+        "title": "Yetenekler & Teknolojiler",
+        "description": "Projelerimde kullandığım diller ve alanlar.",
+        "github_langs": "GitHub Dilleri",
+        "game_dev": "Oyun & Geliştirme"
+    },
+    "experience": {
+        "title": "Deneyim",
+        "roles": {
+            "founder": "Kurucu",
+            "instructor": "Eğitmen",
+            "president": "Başkan",
+            "vr_specialist": "VR Uzmanı",
+            "board_member": "Yönetim Kurulu Üyesi",
+            "tech_lead": "Teknik Takım Lideri",
+            "exec_board_member": "İcra Kurulu Üyesi",
+            "game_dev": "Oyun Geliştirici",
+            "volunteer": "Gönüllü",
+            "event_coord": "Etkinlik Koordinatörü",
+            "sales": "Satış Uzmanı"
+        },
+        "present": "Halen"
+    },
+    "about": {
+        "title": "Hakkında",
+        "quote": "\"Kafana şapkadan başka bir şey takma.\"",
+        "p1": "Unity(6 yıl+), Godot(2y+) ve Unreal Engine(1y) ile çalışan, sürükleyici ve ilgi çekici oyun deneyimleri yaratan aktif bir oyun geliştiricisiyim. Büyük bir oyun geliştirme topluluğunun başkanı olarak, insanları bir araya getirmekten, projelere liderlik etmekten ve başkalarının gelişimine katkıda bulunmaktan keyif alıyorum. Güçlü liderliğin empati, açık iletişim ve paylaşılan bir vizyonla başladığına inanıyorum.",
+        "p2": "Oyun geliştirmeye ek olarak, yenilikçi tasarım yoluyla teknoloji ve refahı birleştiren sağlık ve simülasyon odaklı VR projeleri üzerinde çalışıyorum."
+    },
+    "contact": {
+        "title": "İletişim",
+        "description": "Projeler ve iş birlikleri için GitHub veya LinkedIn üzerinden ulaşabilirsiniz."
+    },
+    "footer": {
+        "rights": "Tüm hakları saklıdır."
+    }
+}

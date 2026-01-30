@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import type { GitHubRepo } from '../types/github';
 
 interface SkillsProps {
@@ -5,6 +6,8 @@ interface SkillsProps {
 }
 
 export function Skills({ repos }: SkillsProps) {
+  const { t } = useTranslation();
+
   const languages = Array.from(
     new Set(repos.map((r) => r.language).filter(Boolean) as string[])
   ).sort();
@@ -23,15 +26,15 @@ export function Skills({ repos }: SkillsProps) {
     <section id="skills" className="py-24 px-4 relative">
       <div className="max-w-6xl mx-auto">
         <h2 className="font-display text-3xl sm:text-4xl font-bold text-white mb-2">
-          Yetenekler & Teknolojiler
+          {t('skills.title')}
         </h2>
         <p className="text-gray-400 font-body text-lg mb-12">
-          Projelerimde kullandığım diller ve alanlar.
+          {t('skills.description')}
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <div>
             <h3 className="font-display text-accent text-sm uppercase tracking-widest mb-4">
-              GitHub dilleri
+              {t('skills.github_langs')}
             </h3>
             <div className="flex flex-wrap gap-2">
               {languages.map((lang) => (
@@ -46,7 +49,7 @@ export function Skills({ repos }: SkillsProps) {
           </div>
           <div>
             <h3 className="font-display text-accent text-sm uppercase tracking-widest mb-4">
-              Oyun & geliştirme
+              {t('skills.game_dev')}
             </h3>
             <div className="flex flex-wrap gap-2">
               {gameRelated.map((skill) => (
