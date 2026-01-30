@@ -76,7 +76,7 @@ export function Experience() {
                     {EXPERIENCES.map((exp, index) => (
                         <div
                             key={index}
-                            className="relative pl-8 sm:pl-12 opacity-0 animate-fade-in-up"
+                            className="relative pl-8 sm:pl-12 animate-fade-in-up"
                             style={{ animationDelay: `${index * 100}ms` }}
                         >
                             {/* Timeline Dot */}
