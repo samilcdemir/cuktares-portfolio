@@ -11,4 +11,6 @@ export const siteConfig = {
   role: 'Game Developer',
   /** GitHub kullanıcı adı – link gelince burayı değiştirin */
   githubUsername: 'cuktares',
+  /** LinkedIn profili */
+  linkedinUrl: 'https://www.linkedin.com/in/benemirhanunal/',
 } as const;

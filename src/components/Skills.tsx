@@ -10,11 +10,13 @@ export function Skills({ repos }: SkillsProps) {
   ).sort();
 
   const gameRelated = [
+    'Unity (6 years+)',
+    'Godot (2y+)',
+    'Unreal Engine (1y)',
+    'Virtual Reality (VR)',
+    'C#',
+    'Product Management',
     'Game Development',
-    'TypeScript',
-    'Unity / Unreal (concept)',
-    'Mobile (Dart/Flutter)',
-    'Backend (Kotlin, Java, Node)',
   ];
 
   return (

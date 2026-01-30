@@ -58,7 +58,8 @@ export function Projects({ repos, loading, error }: ProjectsProps) {
             {repos.map((repo) => (
               <article
                 key={repo.id}
-                className="group rounded-xl bg-white/5 border border-white/10 p-6 hover:border-accent/40 hover:shadow-[0_0_30px_rgba(225,29,72,0.15)] transition-all duration-300"
+                onClick={() => window.open(repo.html_url, '_blank')}
+                className="group rounded-xl bg-white/5 border border-white/10 p-6 hover:border-accent/40 hover:shadow-[0_0_30px_rgba(225,29,72,0.15)] hover:-translate-y-1 cursor-pointer transition-all duration-300"
               >
                 <div className="flex items-start justify-between gap-2 mb-3">
                   <h3 className="font-display font-bold text-lg text-white truncate">
@@ -82,26 +83,19 @@ export function Projects({ repos, loading, error }: ProjectsProps) {
                     </span>
                   )}
                 </div>
-                <div className="flex gap-3">
-                  <a
-                    href={repo.html_url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-accent font-body text-sm font-medium hover:underline"
-                  >
-                    Repo
-                  </a>
-                  {repo.homepage && (
+                {repo.homepage && (
+                  <div className="flex gap-3">
                     <a
                       href={repo.homepage}
                       target="_blank"
                       rel="noopener noreferrer"
+                      onClick={(e) => e.stopPropagation()}
                       className="text-accent font-body text-sm font-medium hover:underline"
                     >
                       Live
                     </a>
-                  )}
-                </div>
+                  </div>
+                )}
               </article>
             ))}
           </div>
